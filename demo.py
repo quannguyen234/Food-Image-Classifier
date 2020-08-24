@@ -37,7 +37,7 @@ if __name__ == "__main__":
     if uploaded_img:
         st.image(uploaded_img, caption="Uploaded Image",use_column_width=True)
         result.info("Please wait for your results")
-        model = models.load_model("food_classifier_augm_balanced.h5")
+        model = models.load_model("food_classifier_augm_model")
         pred_img = load_img(uploaded_img, 224)
         pred = np.argmax(model.predict(pred_img),axis=1)
 
