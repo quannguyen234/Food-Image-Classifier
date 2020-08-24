@@ -1,7 +1,6 @@
 import streamlit as st 
 import numpy as np
 from PIL import Image
-from classify import predict
 import os, sys
 import pathlib
 
