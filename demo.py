@@ -6,10 +6,10 @@ import pathlib
 
 
 from tensorflow.keras.applications import vgg16
-from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predictions
-from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
-from tensorflow.keras.callbacks import ModelCheckpoint
-from tensorflow.keras import layers, models, Model, optimizers
+# from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predictions
+from tensorflow.keras.preprocessing.image import load_img, img_to_array #ImageDataGenerator
+# from tensorflow.keras.callbacks import ModelCheckpoint
+from tensorflow.keras import models, Model
 
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
